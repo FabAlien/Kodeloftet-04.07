@@ -64,3 +64,90 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+.redBox {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.projectDivider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projectCard {
+  border: 2px solid black;
+  width: 300px;
+  justify-content: center;
+}
+
+.projectCard:hover {
+  color: red;
+}
+
+.projectImage {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectText {
+  padding: 8px;
+}
+
+.projectLine {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  color: black;
+}
+
+.projectLine:hover {
+  background-color: red;
+  color: red;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.information, .image {
+  width: 50%;
+  border: 2px solid black;
+}
+
+.image img {
+  width: 100%;
+}
+
+@media (max-width: 426px) {
+  .redBox {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 769px){
+  .redBox {
+    background-color: orange;
+  }
+}
+
+@media (max-width: 426px) {
+  .projectDivider {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:link:hover, a:visited:hover {
+  color: red;
+}
